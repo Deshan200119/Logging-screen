@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Background.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 28px;
+    top: 0;
+    left: 0;
+    padding: 25px 7.5%;
+    width: 100%;
+    position: fixed;
+    background: transparent;
+}
+
+.main a{
+    text-decoration: none;
+    color: rgb(247, 251, 255);
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;  
+    font-size: small;
+}
+.main a::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: -8px;
+    background: #ffffff;
+    position: absolute;
+    transition: 0.8s;
+    opacity: 0;
+}
+.main a:hover::after{
+    bottom: -3px;
+    opacity: 1;
+}
+.search-bar{
+    width: 500px;
+    border:3px solid #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background: transparent;
+    margin-right: 60px;
+}
+.search-bar input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: azure;
+    font-size: 15px;
+    padding: 10px;
+
+}
+.search-bar input ::placeholder{
+    color: #e4e4e4;
+}
+.search-bar button{
+    height: 100%;
+    background: transparent;
+    color: #e4e4e4;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.main2{
+    position: absolute;
+    width: 80%;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(Background\ 2.jpeg);
+    backdrop-filter: BLUR(5PX);
+    background-size: cover;
+    margin-top: 50px;
+    color: #e4e4e4;
+    border-radius: 10px;
+
+}
+.d1{
+    width: 58%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    text-align: left;
+    margin: 50px;
+    
+}
+.d1 h1{
+    margin-top: 200px;
+}
+.d1 h2{
+    padding-top: 0;
+    padding-bottom: 25px;
+}
+.d1 p{
+    padding-bottom: 20px;
+    font-size: smaller;
+    font-weight: 200;
+}
+button i{
+    color: #e4e4e4;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    transition: 0.8s;
+}
+.but{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 7px;
+    
+    
+}
+.button{
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    margin-left: -10;
+    margin-top: -10px;
+}
+.but:hover{
+    background: #e4e4e4;
+    border-radius: 10px;
+}
+button i:hover{
+    transform: scale(1.2);
+    color: black;
+}
+.d5{
+    text-transform: uppercase;
+}
+.d2 {
+    width: 42%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50,-50);
+    
+    border-radius: 10px;
+    
+}
+.form-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+
+}
+.loging-box h2{
+    text-align: center;
+    
+    font-size: 32px;
+}
+.input-box{
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #e4e4e4;
+
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s ease;
+   
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 0;
+    top: 13px;
+    font-size: 20px;
+}
+.remeber{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1px;
+}
+.remeber a{
+    text-decoration: none;
+    color: antiquewhite;
+    position: relative;
+    font-weight: 600;
+}
+.remeber a::after{
+    content: '';
+    bottom: -8px;
+    position: absolute;
+    background: #ffffff;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    opacity: 0;
+    transition: 0.8s;
+
+}
+.remeber a:hover::after{
+    opacity: 1;
+    bottom: -4px;
+}
+.loging-box button{
+    width: 100%;
+    height: 40px;
+    margin: 20px 0;
+    background: transparent;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: relative;
+    color: #ffffff;
+
+}
+.loging-box button::after{
+    content: '';
+    width: 0;
+    height: 100%;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 10px;
+    z-index: -1;
+    transition: 0.8s;
+}
+.loging-box button:hover:after{
+    width: 100%;
+
+}
+.loging-box button:hover{
+    color: black;
+}
+.d11{
+    text-align: center;
+}
+.d11 a{
+    color: #e4e4e4;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+.d11 a::after{
+    content: '';
+    bottom: -8px;
+    position: absolute;
+    background: #ffffff;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    opacity: 0;
+    transition: 0.8s;
+}
+.d11 a:hover::after{
+    opacity: 1;
+    bottom: -3px;
+}
+.reji-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+.reji-box h2{
+    text-align: center;
+    
+    font-size: 32px;
+}
+.reji-box button{
+    width: 100%;
+    height: 40px;
+    margin: 20px 0;
+    background: transparent;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: relative;
+    color: #ffffff;
+
+}
+.reji-box button::after{
+    content: '';
+    width: 0;
+    height: 100%;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 10px;
+    z-index: -1;
+    transition: 0.8s;
+}
+.reji-box button:hover:after{
+    width: 100%;
+
+}
+.reji-box button:hover{
+    color: black;
+}
